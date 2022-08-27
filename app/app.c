@@ -18,5 +18,8 @@ int main(void)
     insertion_sort(&b,13);
     print_collection(b,13);
 
+    reverse(&b,13);
+
+    print_collection(b,13);
     return 0;
 }
