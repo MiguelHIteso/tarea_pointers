@@ -13,7 +13,10 @@ int main(void)
     print_collection(a,13);
     bubble_sort(&a,13);
     print_collection(a,13);
-
+    int b[]= {3,4,5,2,1,8,9,10,7,2,11,45,6,9};
+    print_collection(b,13);
+    insertion_sort(&b,13);
+    print_collection(b,13);
 
     return 0;
 }

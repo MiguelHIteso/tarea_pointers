@@ -28,7 +28,18 @@ int bubble_sort(int *target, int count)
 
 void insertion_sort(int *collection, int count)
 {
-
+    int selection = 0, h = 0;
+    for(int i =0; i < count; i++)
+    {
+        selection = *(collection + i);
+        h = i;
+        while(h > 0 && *(collection + h - 1) > selection)
+        {
+            *(collection + h) = *(collection + h -1);
+            *(collection + h -1) = selection;
+            h--;
+        }
+    }
 }
 
 void reverse(int *collection, int count)
