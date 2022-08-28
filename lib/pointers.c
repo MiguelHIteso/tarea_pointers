@@ -67,6 +67,5 @@ int calulate_frequency(int *collection, int count, int target)
         if(*(collection + i) == target)
             freq++;
     }
-    printf("%d",target);
     return target;
 }
