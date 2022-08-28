@@ -12,7 +12,7 @@ void swap(int *a, int *b)
 }
 int bubble_sort(int *target, int count)
 {
-  // aqui su implementación.
+    int swag = 0;
     for(int i = 0; i < count - 2; i++)
     {
         for(int j = 0; j < count - 1; j++)
@@ -20,10 +20,11 @@ int bubble_sort(int *target, int count)
             if(*(target + j) > *(target + j + 1))
             {
                 swap((target + j),(target + j + 1));
+                swag++;
             }
         }
     }
-  return 0;
+    return swag;
 }
 
 void insertion_sort(int *collection, int count)
@@ -60,5 +61,12 @@ void reverse(int *collection, int count)
 
 int calulate_frequency(int *collection, int count, int target)
 {
-  return 0;
+    int freq = 0;
+    for(int i = 0; i < count; i++)
+    {
+        if(*(collection + i) == target)
+            freq++;
+    }
+    printf("%d",target);
+    return target;
 }

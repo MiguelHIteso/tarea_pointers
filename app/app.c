@@ -21,5 +21,6 @@ int main(void)
     reverse(&b,13);
 
     print_collection(b,13);
+    calulate_frequency(b,13,2);
     return 0;
 }
